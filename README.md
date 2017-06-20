@@ -38,10 +38,36 @@
 
 具体的配置方法如下：
 
-1. 申请阿里云https免费安全证书，
+> 1.申请阿里云https免费安全证书
 
-2. 在阿里云的CDN服务中新建加速域名
+> ![云盾证书服务](http://oqpmmru7y.bkt.clouddn.com/1zhengshu.png)
+> ![购买证书](http://oqpmmru7y.bkt.clouddn.com/2maizhengshu.png)
+> ![选择证书类型](http://oqpmmru7y.bkt.clouddn.com/3xuanzezhengshu.png)
+> ![查看证书签发状态](http://oqpmmru7y.bkt.clouddn.com/4qianfazhengshu.png)
 
-3. 修改域名解析记录
+> 2.在阿里云的CDN服务中新建加速域名
 
-这其中会遇到的问题总结： 
+> ![](http://oqpmmru7y.bkt.clouddn.com/5tianjiayuming.png)
+> ![](http://oqpmmru7y.bkt.clouddn.com/6tianjiayumingcdn.png)
+> ![](http://oqpmmru7y.bkt.clouddn.com/7cdnpeizhihttps.png)
+> ![](http://oqpmmru7y.bkt.clouddn.com/8fuzhicname.png)
+
+> 3.修改域名解析记录
+
+> ![](http://oqpmmru7y.bkt.clouddn.com/9tianjiacnamejiexi.png)
+
+这其中会遇到的问题总结（这里只总结自己在配置https中所遇到的问题）： 
+
+> CDN **CNAME** 解析问题，一般域名的解析中都会存在已经解析好的A记录，如果你已经把域名指向到了你的虚拟主机或者服务器。就会有这样一条记录：`A  @  默认 ip地址`
+
+> ![](http://oqpmmru7y.bkt.clouddn.com/10yumingjiexi.png)
+
+> 这样的话你在添加CNAME的时候,会提示**CNAME记录与主机记录（@）的A记录冲突，无法保存成功**需要删除@的这条A记录，在重新添加CNAME记录解析。
+
+> ![](http://oqpmmru7y.bkt.clouddn.com/11jiaxihaode.png)
+
+> 一般在十分钟左右就会生效。（如果你在配置中遇到了其他问题欢迎在[issue](https://github.com/smileyby/create-website/issues)中提问）
+
+到这里呢，我们网站的基本配置就完成了。接下来就是建页面加内容了。
+
+## 使用个啥来创建这个站点页面呢？纠结。
