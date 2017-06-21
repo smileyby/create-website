@@ -70,4 +70,8 @@
 
 到这里呢，我们网站的基本配置就完成了。接下来就是建页面加内容了。
 
-## 使用个啥来创建这个站点页面呢？纠结。
+## 使用wordpress，开始搭建
+
+在配置了https之后，安装wordpress过程中会发现，所有的css和js都加载失败了。此时需要配置一下里面function.php文件
+
+wordpress官方给出的https配置方案：[https://wordpress.org/plugins/wordpress-https/#installation](https://wordpress.org/plugins/wordpress-https/#installation)
