@@ -70,8 +70,19 @@
 
 到这里呢，我们网站的基本配置就完成了。接下来就是建页面加内容了。
 
-## 使用wordpress，开始搭建
+## 使用wordpress，开始搭建主站
+
+1. 进入[wordpress中文官网](https://cn.wordpress.org/)后下载官方提供的压缩文件，并解压存放到主机或服务器中；
+2. 访问你的主域名后面拼上`/admin`会自动跳转到wordpress的配置界面，按照上面的要求进行配置就可以了
+3. 配置好以后，选择一个你喜欢的主体[wordpress主题](https://wordpress.org/themes/)对你的站点进行美化
+4. 要实现发布文章识别markdown语法这里需要安装一款插件[wp markdown editor](https://github.com/JaxsonWang/WP-Editor.MD)
+5. 至此我们就实现了一个主站的基本功能，接下来的工作就是推广和优化你自己的主站
+
+（明天吧贴图放上）
+
 
 在配置了https之后，安装wordpress过程中会发现，所有的css和js都加载失败了。此时需要配置一下里面function.php文件
 
 wordpress官方给出的https配置方案：[https://wordpress.org/plugins/wordpress-https/#installation](https://wordpress.org/plugins/wordpress-https/#installation)
+
+
