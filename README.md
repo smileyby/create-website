@@ -78,11 +78,17 @@
 4. 要实现发布文章识别markdown语法这里需要安装一款插件[wp markdown editor](https://github.com/JaxsonWang/WP-Editor.MD)
 5. 至此我们就实现了一个主站的基本功能，接下来的工作就是推广和优化你自己的主站
 
-（明天吧贴图放上）
+如果你看了上面的文字仍然不知道要怎么配置wordpress后台，请参考[怎样配置wordpress](http://jingyan.baidu.com/article/1876c852beb080890b137696.html)
 
 
 在配置了https之后，安装wordpress过程中会发现，所有的css和js都加载失败了。此时需要配置一下里面function.php文件
 
 wordpress官方给出的https配置方案：[https://wordpress.org/plugins/wordpress-https/#installation](https://wordpress.org/plugins/wordpress-https/#installation)
+
+wordpress的主题有很多，我用的是**simple**
+
+## 如何让自己搭建的网站被搜索引擎搜录？
+
+要怎么做呢？
 
 
